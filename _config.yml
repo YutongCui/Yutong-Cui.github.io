@@ -13,16 +13,22 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+# 基础站点配置（必保留）
+title: Yutong Cui | Personal Homepage
 baseurl: ""
-url: "https://yutong-cui.github.io"title: "Yutong Cui" # 主页标题（通常显示为名字）
-name: "崔雨童" # 新增：个人名字（核心）
-# =====个人基础信息=====
-name: 你的姓名
+url: "https://yutong-cui.github.io"
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-email-protect
+
+# ==========个人基础信息==========
+name: Yutong Cui
 tel: 86-15708986685
 email: Yutong981104@163.com
 research_interests: Biomedical nanomaterials, bioimaging & disease theranostics
 
-# =====教育经历=====
+# ==========教育经历==========
 education:
   - school: Hainan University, Haikou, China
     period: Sept 2020 - Jun 2023
@@ -33,13 +39,13 @@ education:
     degree: B.Agri., Horticulture
     gpa: 3.7/4.0
 
-# =====工作经历=====
+# ==========工作经历==========
 work_exp:
   - institution: Hainan Academy of Forestry (Hainan Academy of Mangrove)
     position: Intermediate Engineer
     period: Nov 2023 - present
 
-# =====发表论文=====
+# ==========发表论文==========
 publications:
   - info: JCR Q1 Juanjuan Li#, Yutong Cui#, et al. Surface-engineered bio-manufactured gas vesicles for multimodal imaging of glioma. Journal of Nanobiotechnology, Feb 2025. (#Co-first author)
   - info: JCR Q1 Yutong Cui, et al. Alginate-based injectable probiotic/squid ink composite hydrogels for accelerated wound healing of MRSA infected abscess through photothermally synergized probiotic therapy. International journal of biological macromolecules, Nov 2024.
@@ -48,7 +54,7 @@ publications:
   - info: JCR Q2 Rongcun Gan, Yu Han, Dandan Rao, Tengmin Li, Erhuan Wu, Yutong Cui, et al. Development and application of genome-derived SSR markers for genetic diversity analysis of bougainvillea. BMC Genomics, Apr 2026.
   - info: Yutong Cui, et al. Construction and evaluation of gas vesicle-based targeted theranostic integrated platform for glioma. Chemical Reagents, Nov 2023. (In Chinese)
 
-# =====科研项目=====
+# ==========科研项目==========
 research_projects:
   - role: Principal Investigator
     content: Hainan “Nanhai New Star” Talent Project, Multi-omics Analysis of the Molecular Mechanism of Compound Microbial Agent Promoting Agarwood Formation in Aquilaria sinensis
@@ -57,7 +63,7 @@ research_projects:
   - role: Key Participant
     content: Open Fund of Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology, Resource Exploration and Modification of Biosynthetic Ultrasound Contrast Agent Algae Strains
 
-# =====科研课题=====
+# ==========课题研究内容==========
 research_content:
   - item: Dualmodal (FL/US) Imaging Probe for Glioma Diagnosis
     desc: Developed PEI-modified gas vesicle loaded CY5 probe; realized high-intensity fluorescence and ultrasound dual-mode orthotopic glioma in-vivo imaging with improved BBB penetration.
@@ -68,7 +74,7 @@ research_content:
   - item: Ultrasound-Responsive Gold Nanocluster-Decorated GV (GV-Au)
     desc: AuNCs modified gas vesicles, ultrasound-triggered enhanced cell uptake and fluorescence imaging signal.
 
-# =====专业技能=====
+# ==========专业技能==========
 skills:
   - Nanomaterial Synthesis & Functionalization: Synthesis of various inorganic/organic nanoparticles, surface modification, hydrogel preparation, electrospinning, sol-gel technology.
   - Material Characterization: SEM, TEM, AFM, XRD, FTIR, UV-Vis, DLS, XPS, TGA and other conventional testing means.
@@ -76,10 +82,23 @@ skills:
   - Software: Origin, GraphPad Prism, ImageJ, AI, EndNote; data processing and image quantification.
   - Comprehensive ability: Independent research design, experimental arrangement, teamwork and autonomous learning.
 
-# =====获奖情况=====
+# ==========获奖信息==========
 awards:
   - Freshmen Scholarship (Ranking: 1/40)
-  - First Prize Scholarship (TOP 5%)# Exclude from processing.
+  - First Prize Scholarship (TOP 5%)
+
+# ==========项目/作品（后续可继续新增）==========
+projects:
+  - title: 基于生物气囊的胶质瘤双模态成像探针开发
+    subtitle: Biomedical Nanomaterial | FL/US Dual Imaging
+    link: https://github.com/Yutong-Cui/vesicle-probe
+    desc: 利用天然微生物气囊载体，构建荧光-超声双模态靶向造影剂，用于颅内胶质瘤活体精准成像。
+    tags: ["生物纳米","超声造影","活体成像"]
+  - title: 抗感染益生菌复合水凝胶敷料
+    subtitle: Antibacterial Hydrogel | 创面修复
+    link: https://github.com/Yutong-Cui/probiotic-hydrogel
+    desc: 海藻酸钠复合墨鱼墨+益生菌可注射水凝胶，光热协同杀菌，针对耐药菌脓肿创面修复。
+    tags: ["水凝胶","抗菌敷料","生物医药"]
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
