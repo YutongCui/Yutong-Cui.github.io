@@ -14,13 +14,72 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 baseurl: "/academic-homepage" # the subpath of your site, e.g. /blog
+title: "Yutong Cui" # 主页标题（通常显示为名字）
+name: "崔雨童" # 新增：个人名字（核心）
+# =====个人基础信息=====
+name: 你的姓名
+tel: 86-15708986685
+email: Yutong981104@163.com
+research_interests: Biomedical nanomaterials, bioimaging & disease theranostics
 
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-email-protect
+# =====教育经历=====
+education:
+  - school: Hainan University, Haikou, China
+    period: Sept 2020 - Jun 2023
+    degree: M.Sc., Biology
+    gpa: 3.2/5.0
+  - school: Ludong University, Yantai, China
+    period: Sept 2016 - Jun 2020
+    degree: B.Agri., Horticulture
+    gpa: 3.7/4.0
 
-# Exclude from processing.
+# =====工作经历=====
+work_exp:
+  - institution: Hainan Academy of Forestry (Hainan Academy of Mangrove)
+    position: Intermediate Engineer
+    period: Nov 2023 - present
+
+# =====发表论文=====
+publications:
+  - info: JCR Q1 Juanjuan Li#, Yutong Cui#, et al. Surface-engineered bio-manufactured gas vesicles for multimodal imaging of glioma. Journal of Nanobiotechnology, Feb 2025. (#Co-first author)
+  - info: JCR Q1 Yutong Cui, et al. Alginate-based injectable probiotic/squid ink composite hydrogels for accelerated wound healing of MRSA infected abscess through photothermally synergized probiotic therapy. International journal of biological macromolecules, Nov 2024.
+  - info: JCR Q2 Yutong Cui, et al. Ultrasound mediated gold Nanoclusters-Capped gas vesicles for enhanced fluorescence Imaging. Photodiagnosis and photodynamic therapy, Sep 2023.
+  - info: JCR Q1 Yu Han, Yutong Cui, et al. High-density genetic map construction using whole-genome resequencing of Cymbidium eburneum × Cymbidium insigne F1 population and localization of flower color genes. Frontiers in Plant Science, Nov 2025.
+  - info: JCR Q2 Rongcun Gan, Yu Han, Dandan Rao, Tengmin Li, Erhuan Wu, Yutong Cui, et al. Development and application of genome-derived SSR markers for genetic diversity analysis of bougainvillea. BMC Genomics, Apr 2026.
+  - info: Yutong Cui, et al. Construction and evaluation of gas vesicle-based targeted theranostic integrated platform for glioma. Chemical Reagents, Nov 2023. (In Chinese)
+
+# =====科研项目=====
+research_projects:
+  - role: Principal Investigator
+    content: Hainan “Nanhai New Star” Talent Project, Multi-omics Analysis of the Molecular Mechanism of Compound Microbial Agent Promoting Agarwood Formation in Aquilaria sinensis
+  - role: Principal Investigator
+    content: Hainan Provincial Science and Technology Innovation Project, Purification of Microcystis Aeruginosa Gas Vesicle Protein Clusters Grafted with Quantum Dots for Dual-modal Bioimaging
+  - role: Key Participant
+    content: Open Fund of Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology, Resource Exploration and Modification of Biosynthetic Ultrasound Contrast Agent Algae Strains
+
+# =====科研课题=====
+research_content:
+  - item: Dualmodal (FL/US) Imaging Probe for Glioma Diagnosis
+    desc: Developed PEI-modified gas vesicle loaded CY5 probe; realized high-intensity fluorescence and ultrasound dual-mode orthotopic glioma in-vivo imaging with improved BBB penetration.
+  - item: Injectable Probiotic/Squid Ink Hydrogel for MRSA-Infected Abscess
+    desc: Fabricated alginate-based composite hydrogel combining probiotics and squid ink; achieved 92.5% MRSA elimination via photothermal-probiotic synergy and full abscess repair within 14 days.
+  - item: GV-Based Targeted Drug Delivery for Glioma Theranostics
+    desc: DOX-conjugated gas vesicle carrier with pH-responsive release, low systemic toxicity and excellent glioma targeted killing performance.
+  - item: Ultrasound-Responsive Gold Nanocluster-Decorated GV (GV-Au)
+    desc: AuNCs modified gas vesicles, ultrasound-triggered enhanced cell uptake and fluorescence imaging signal.
+
+# =====专业技能=====
+skills:
+  - Nanomaterial Synthesis & Functionalization: Synthesis of various inorganic/organic nanoparticles, surface modification, hydrogel preparation, electrospinning, sol-gel technology.
+  - Material Characterization: SEM, TEM, AFM, XRD, FTIR, UV-Vis, DLS, XPS, TGA and other conventional testing means.
+  - Biological Experiments: Cell culture, CCK-8/MTT, cellular imaging, antibacterial experiment, hemolysis test, Western blot, animal histopathology.
+  - Software: Origin, GraphPad Prism, ImageJ, AI, EndNote; data processing and image quantification.
+  - Comprehensive ability: Independent research design, experimental arrangement, teamwork and autonomous learning.
+
+# =====获奖情况=====
+awards:
+  - Freshmen Scholarship (Ranking: 1/40)
+  - First Prize Scholarship (TOP 5%)# Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
