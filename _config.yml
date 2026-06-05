@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 # 基础站点配置（必保留）
 title: Yutong Cui | Personal Homepage
+remote_theme: academicpages/academicpages.github.io
 baseurl: ""
 url: "https://yutong-cui.github.io"
 markdown: kramdown
